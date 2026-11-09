@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AexCart | Online Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">N</span> AexCart</a>
+    <nav><a href="#shop">Shop</a><a href="#about">About</a></nav>
+    <button class="cart-button" id="cartToggle">Cart <span id="cartCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">A BETTER WAY TO SHOP</p>
+        <h1>Find your next<br><span>favourite thing.</span></h1>
+        <p class="hero-text">Thoughtful picks for everyday life. Explore our collection and enjoy a simple shopping experience.</p>
+        <a class="primary-btn" href="#shop">Explore products <span>→</span></a>
+      </div>
+      <div class="hero-art">
+        <div class="hero-circle"></div>
+        <div class="hero-card"><span>NEW<br>ARRIVALS</span><strong>01 / 06</strong></div>
+        <div class="hero-bag">✦</div>
+      </div>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <div class="section-heading">
+        <div><p class="eyebrow">CURATED FOR YOU</p><h2>Featured products</h2></div>
+        <input id="searchInput" class="search" type="search" placeholder="Search products...">
+      </div>
+      <div class="filters" id="filters">
+        <button class="filter active" data-category="All">All</button>
+        <button class="filter" data-category="Tech">Tech</button>
+        <button class="filter" data-category="Lifestyle">Lifestyle</button>
+        <button class="filter" data-category="Accessories">Accessories</button>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="about" id="about">
+      <div><p class="eyebrow">WHY AEXCART</p><h2>Simple shopping.<br>Good choices.</h2></div>
+      <p>AexCart is a sample e-commerce storefront built to demonstrate product discovery, search, category filtering, cart management and a demo checkout flow.</p>
+    </section>
+  </main>
+
+  <aside class="cart-panel" id="cartPanel" aria-label="Shopping cart">
+    <div class="cart-head"><h2>Your cart</h2><button id="closeCart" class="icon-btn" aria-label="Close cart">×</button></div>
+    <div id="cartItems" class="cart-items"><p class="empty-cart">Your cart is empty.</p></div>
+    <div class="cart-footer"><div class="total-row"><span>Subtotal</span><strong id="cartTotal">₹0</strong></div><button id="checkoutBtn" class="primary-btn full">Proceed to checkout</button><p class="demo-note">Demo checkout — no real payment is collected.</p></div>
+  </aside>
+  <div class="scrim" id="scrim"></div>
+
+  <footer><span>© 2026 AexCart</span><span>Student internship demo project</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
